@@ -21,6 +21,7 @@
 
 - (void)viewDidLoad
 {
+    self.lpsCurrentState = [[LPSCurrentState alloc] init];
     [super viewDidLoad];
 }
 
