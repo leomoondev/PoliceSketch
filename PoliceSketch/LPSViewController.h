@@ -10,6 +10,7 @@
 #import "LPSCurrentState.h"
 
 @interface LPSViewController : UIViewController
+
 @property (strong, nonatomic) IBOutlet UIButton *firstLeftArrowButton;
 @property (strong, nonatomic) IBOutlet UIButton *firstRightArrowButton;
 @property (strong, nonatomic) IBOutlet UIButton *secondLeftArrowButton;
@@ -28,4 +29,14 @@
 - (IBAction)thirdPreviousImage:(id)sender;
 - (IBAction)thirdNextImage:(id)sender;
 
+@property NSInteger eyeObjectIndex;
+@property NSInteger noseObjectIndex;
+@property NSInteger mouthObjectIndex;
+
+- (UIImage *)firstPreviousImage;
+- (UIImage *)firstNextImage;
+- (UIImage *)secondPreviousImage;
+- (UIImage *)secondNextImage;
+- (UIImage *)thirdPreviousImage;
+- (UIImage *)thirdNextImage;
 @end
