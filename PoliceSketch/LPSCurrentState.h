@@ -11,8 +11,19 @@
 
 @interface LPSCurrentState : NSObject
 
+@property NSInteger eyeObjectIndex;
+@property NSInteger noseObjectIndex;
+@property NSInteger mouthObjectIndex;
+
 + (NSArray*)storeEyeImages;
 + (NSArray*)storeNoseImages;
 + (NSArray*)storeMouthImages;
+
+- (UIImage *)firstPreviousImage;
+- (UIImage *)firstNextImage;
+- (UIImage *)secondPreviousImage;
+- (UIImage *)secondNextImage;
+- (UIImage *)thirdPreviousImage;
+- (UIImage *)thirdNextImage;
 
 @end

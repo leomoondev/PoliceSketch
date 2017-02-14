@@ -37,7 +37,7 @@
 		AF23D80919DCB73A0049AD5E /* nose_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF23D7F819DCB73A0049AD5E /* nose_3.jpg */; };
 		AF23D80A19DCB73A0049AD5E /* nose_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF23D7F919DCB73A0049AD5E /* nose_4.jpg */; };
 		AF23D80B19DCB73A0049AD5E /* nose_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF23D7FA19DCB73A0049AD5E /* nose_5.jpg */; };
-		DA6804C41E52466E0017E1E1 /* LPSCurrentState.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6804C31E52466E0017E1E1 /* LPSCurrentState.m */; };
+		DA68050F1E53874F0017E1E1 /* LPSCurrentState.m in Sources */ = {isa = PBXBuildFile; fileRef = DA68050E1E53874F0017E1E1 /* LPSCurrentState.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,8 +85,8 @@
 		AF23D7F819DCB73A0049AD5E /* nose_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nose_3.jpg; sourceTree = "<group>"; };
 		AF23D7F919DCB73A0049AD5E /* nose_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nose_4.jpg; sourceTree = "<group>"; };
 		AF23D7FA19DCB73A0049AD5E /* nose_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nose_5.jpg; sourceTree = "<group>"; };
-		DA6804C21E52466E0017E1E1 /* LPSCurrentState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPSCurrentState.h; path = ../Images/LPSCurrentState.h; sourceTree = "<group>"; };
-		DA6804C31E52466E0017E1E1 /* LPSCurrentState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LPSCurrentState.m; path = ../Images/LPSCurrentState.m; sourceTree = "<group>"; };
+		DA68050D1E53872C0017E1E1 /* LPSCurrentState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPSCurrentState.h; sourceTree = "<group>"; };
+		DA68050E1E53874F0017E1E1 /* LPSCurrentState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPSCurrentState.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,8 +152,8 @@
 				60D60726197C369000A4DE1D /* LPSViewController.h */,
 				60D60727197C369000A4DE1D /* LPSViewController.m */,
 				8BF448D01D2B216D00440722 /* LaunchScreen.storyboard */,
-				DA6804C21E52466E0017E1E1 /* LPSCurrentState.h */,
-				DA6804C31E52466E0017E1E1 /* LPSCurrentState.m */,
+				DA68050D1E53872C0017E1E1 /* LPSCurrentState.h */,
+				DA68050E1E53874F0017E1E1 /* LPSCurrentState.m */,
 				60D60729197C369000A4DE1D /* Images.xcassets */,
 				60D60718197C369000A4DE1D /* Supporting Files */,
 			);
@@ -311,9 +311,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				60D60722197C369000A4DE1D /* LPSAppDelegate.m in Sources */,
+				DA68050F1E53874F0017E1E1 /* LPSCurrentState.m in Sources */,
 				60D6071E197C369000A4DE1D /* main.m in Sources */,
 				60D60728197C369000A4DE1D /* LPSViewController.m in Sources */,
-				DA6804C41E52466E0017E1E1 /* LPSCurrentState.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

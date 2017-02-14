@@ -112,14 +112,8 @@
                     </view>
                     <connections>
                         <outlet property="eyesView" destination="NY4-Kv-j1f" id="wGp-tG-9wS"/>
-                        <outlet property="firstLeftArrowButton" destination="yXb-1x-fkn" id="i7M-1v-Hht"/>
-                        <outlet property="firstRightArrowButton" destination="oaW-ja-FCK" id="6eK-oV-3OG"/>
                         <outlet property="mouthView" destination="Z1q-fW-UY7" id="tzd-ps-E0u"/>
                         <outlet property="noseView" destination="TzP-6w-VPa" id="LWf-cL-P4T"/>
-                        <outlet property="secondLeftArrowButton" destination="RfN-QY-Wmh" id="BtD-b1-dwM"/>
-                        <outlet property="secondRightArrowButton" destination="7K2-BN-lM1" id="f9W-Ze-Fc0"/>
-                        <outlet property="thirdLeftArrowButton" destination="oHg-aL-6bu" id="mce-I7-Fkr"/>
-                        <outlet property="thirdRightArrowButton" destination="OKX-8R-g3f" id="Kis-8b-vhn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

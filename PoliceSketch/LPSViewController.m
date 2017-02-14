@@ -8,6 +8,15 @@
 
 #import "LPSViewController.h"
 
+@interface LPSViewController () {
+    
+    
+}
+
+@property (nonatomic, strong) LPSCurrentState *lpsCurrentState;
+
+@end
+
 @implementation LPSViewController
 
 - (void)viewDidLoad
@@ -18,147 +27,32 @@
 
 - (IBAction)firstPreviousImage:(id)sender {
     
-    [_eyesView setImage:self.firstPreviousImage];
+    [_eyesView setImage:_lpsCurrentState.firstPreviousImage];
 }
 
 - (IBAction)firstNextImage:(id)sender {
     
-    [_eyesView setImage:self.firstNextImage];
+    [_eyesView setImage:_lpsCurrentState.firstNextImage];
 }
 
 - (IBAction)secondPreviousImage:(id)sender {
     
-    [_noseView setImage:self.secondPreviousImage];
+    [_noseView setImage:_lpsCurrentState.secondPreviousImage];
 }
 
 - (IBAction)secondNextImage:(id)sender {
     
-    [_noseView setImage:self.secondNextImage];
+    [_noseView setImage:_lpsCurrentState.secondNextImage];
 }
 
 - (IBAction)thirdPreviousImage:(id)sender {
     
-    [_mouthView setImage:self.thirdPreviousImage];
+    [_mouthView setImage:_lpsCurrentState.thirdPreviousImage];
 }
 
 - (IBAction)thirdNextImage:(id)sender {
     
-    [_mouthView setImage:self.thirdNextImage];
-}
-
-
-- (UIImage *)firstPreviousImage {
-    
-    if ((_eyeObjectIndex >= 0) &&(_eyeObjectIndex < [LPSCurrentState storeEyeImages].count) ){
-        
-        _eyeObjectIndex--;
-        
-        if (_eyeObjectIndex < 0) {
-            
-            _eyeObjectIndex++;
-            return [[LPSCurrentState storeEyeImages] objectAtIndex:_eyeObjectIndex];
-        }
-        
-        return [[LPSCurrentState storeEyeImages] objectAtIndex:_eyeObjectIndex];
-        
-    }
-    
-    
-    return [LPSCurrentState storeEyeImages][_eyeObjectIndex];
-}
-
-- (UIImage *)firstNextImage {
-    
-    if ((_eyeObjectIndex >= 0) &&(_eyeObjectIndex < [LPSCurrentState storeEyeImages].count)){
-        
-        if (_eyeObjectIndex == [LPSCurrentState storeEyeImages].count - 1) {
-            
-            return [[LPSCurrentState storeEyeImages] objectAtIndex:_eyeObjectIndex];
-        }
-        
-        _eyeObjectIndex++;
-        return [[LPSCurrentState storeEyeImages] objectAtIndex:_eyeObjectIndex];
-        
-    }
-    
-    return [LPSCurrentState storeEyeImages][_eyeObjectIndex];
-    
-}
-
-- (UIImage *)secondPreviousImage {
-    
-    if ((_noseObjectIndex >= 0) &&(_noseObjectIndex < [LPSCurrentState storeNoseImages].count) ){
-        
-        _noseObjectIndex--;
-        
-        if (_noseObjectIndex < 0) {
-            
-            _noseObjectIndex++;
-            return [[LPSCurrentState storeNoseImages] objectAtIndex:_noseObjectIndex];
-        }
-        
-        return [[LPSCurrentState storeNoseImages] objectAtIndex:_noseObjectIndex];
-        
-    }
-    
-    
-    return [LPSCurrentState storeNoseImages][_noseObjectIndex];
-}
-
-- (UIImage *)secondNextImage {
-    
-    if ((_noseObjectIndex >= 0) &&(_noseObjectIndex < [LPSCurrentState storeNoseImages].count)){
-        
-        if (_noseObjectIndex == [LPSCurrentState storeNoseImages].count - 1) {
-            
-            return [[LPSCurrentState storeNoseImages] objectAtIndex:_noseObjectIndex];
-        }
-        
-        _noseObjectIndex++;
-        return [[LPSCurrentState storeNoseImages] objectAtIndex:_noseObjectIndex];
-        
-    }
-    
-    return [LPSCurrentState storeNoseImages][_noseObjectIndex];
-}
-
-- (UIImage *)thirdPreviousImage {
-    
-    if ((_mouthObjectIndex >= 0) &&(_mouthObjectIndex < [LPSCurrentState storeMouthImages].count) ){
-        
-        _mouthObjectIndex--;
-        
-        if (_mouthObjectIndex < 0) {
-            
-            _mouthObjectIndex++;
-            return [[LPSCurrentState storeMouthImages] objectAtIndex:_mouthObjectIndex];
-        }
-        
-        return [[LPSCurrentState storeMouthImages] objectAtIndex:_mouthObjectIndex];
-        
-    }
-    
-    
-    return [LPSCurrentState storeMouthImages][_mouthObjectIndex];
-    
-}
-
-- (UIImage *)thirdNextImage {
-    
-    if ((_mouthObjectIndex >= 0) &&(_mouthObjectIndex < [LPSCurrentState storeMouthImages].count)){
-        
-        if (_mouthObjectIndex == [LPSCurrentState storeMouthImages].count - 1) {
-            
-            return [[LPSCurrentState storeMouthImages] objectAtIndex:_mouthObjectIndex];
-        }
-        
-        _mouthObjectIndex++;
-        return [[LPSCurrentState storeMouthImages] objectAtIndex:_mouthObjectIndex];
-        
-    }
-    
-    return [LPSCurrentState storeMouthImages][_mouthObjectIndex];
-    
+    [_mouthView setImage:_lpsCurrentState.thirdNextImage];
 }
 
 @end

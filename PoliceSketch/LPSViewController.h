@@ -11,12 +11,7 @@
 
 @interface LPSViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UIButton *firstLeftArrowButton;
-@property (strong, nonatomic) IBOutlet UIButton *firstRightArrowButton;
-@property (strong, nonatomic) IBOutlet UIButton *secondLeftArrowButton;
-@property (strong, nonatomic) IBOutlet UIButton *secondRightArrowButton;
-@property (strong, nonatomic) IBOutlet UIButton *thirdLeftArrowButton;
-@property (strong, nonatomic) IBOutlet UIButton *thirdRightArrowButton;
+
 
 @property (strong, nonatomic) IBOutlet UIImageView *eyesView;
 @property (strong, nonatomic) IBOutlet UIImageView *noseView;
@@ -29,14 +24,5 @@
 - (IBAction)thirdPreviousImage:(id)sender;
 - (IBAction)thirdNextImage:(id)sender;
 
-@property NSInteger eyeObjectIndex;
-@property NSInteger noseObjectIndex;
-@property NSInteger mouthObjectIndex;
 
-- (UIImage *)firstPreviousImage;
-- (UIImage *)firstNextImage;
-- (UIImage *)secondPreviousImage;
-- (UIImage *)secondNextImage;
-- (UIImage *)thirdPreviousImage;
-- (UIImage *)thirdNextImage;
 @end
